@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gioia Ring | Bluestone</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js"></script>
+
+  <!-- CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://kinclimg6.bluestone.com/f_webp/static/resources/themes/bluestone/images/fav/apple-touch-icon.png?v=6">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://kinclimg2.bluestone.com/f_webp/static/resources/themes/bluestone/images/fav/favicon-32.png?v=6">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://kinclimg4.bluestone.com/f_webp/static/resources/themes/bluestone/images/fav/favicon-16.png?v=6">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-gif d-flex align-center">
+      <img src="/assets/loaders/spinner.gif" alt="loading...">
+    </div>
+  </div>
+
+  <!-- Notification bar -->
+  <div class="notification-bar">
+    <p>Quick sale: 30% off products purchased today</p>
+  </div>
+
+  <!-- Header -->
+  <header>
+
+    <div class="header-logo">
+      <img src="/assets/icons/bluestone-logo.webp" alt="bs-logo">
+    </div>
+
+    <nav class="header-main-nav">
+      <ul class="d-flex">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Collections</a>
+        </li>
+        <li>
+          <a href="#">Gold</a>
+        </li>
+        <li>
+          <a href="#">Platinum</a>
+        </li>
+        <li>
+          <a href="#">Diamond</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button onclick="toggleSidebar()" class="hamburger-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+
+    <nav class="header-secondary-nav">
+      <ul class="d-flex">
+        <li>
+          <a href="#">
+            <i data-feather="search"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i data-feather="user"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i data-feather="heart"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i data-feather="shopping-bag"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- Breadcrumbs -->
+  <section class="container">
+    <div class="breadcrumbs d-flex align-center">
+      <a href="#">Home</a>
+      <i data-feather="chevron-right"></i>
+      <a href="#">Gold</a>
+      <i data-feather="chevron-right"></i>
+      <span>The Gioia Ring</span>
+    </div>
+  </section>
+
+  <!-- Product Overview -->
+  <section class="container">
+    <div class="product-overview">
+      <div class="carousel-wrapper">
+
+        <!-- Main Image Carousel -->
+        <div class="swiper main-slider">
+          <div class="swiper-wrapper">
+            <!-- Slides for large images (added dynamically via JS) -->
+          </div>
+          <!-- Next and Previous buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Thumbnail Carousel -->
+        <div class="swiper thumbnail-slider">
+          <div class="swiper-wrapper">
+            <!-- Thumbnail slides (added dynamically via JS) -->
+          </div>
+        </div>
+
+      </div>
+      <div class="product-details">
+        <h1>The Gioia Ring</h1>
+        <div class="ratings-wrapper d-flex align-center">
+          <div class="star-ratings">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="review-count">
+            545 reviews
+          </div>
+          <span>/</span>
+          <div class="sold-count">10 sold in last 3 hours</div>
+        </div>
+        <div class="price-info d-flex align-center justify-between">
+          <div class="product-price d-flex align-center">
+            <span>₹ 20,999</span>
+            <span class="sale-price"><s>₹ 29,999</s></span>
+            <span class="discount-percent">-30%</span>
+          </div>
+          <div class="product-category d-flex align-center">
+            <h6>Collection:</h6> <span>Gold</span>
+          </div>
+        </div>
+        <p class="product-description">
+          <span>The Gioia Ring</span> is a stunning gold masterpiece, exuding elegance and timeless charm. With its
+          sleek design and flawless finish, it adds a touch of luxury to any look.
+        </p>
+        <div class="size-selection radio-btn">
+          <label>
+            <input checked type="radio" name="size" value="18KT">
+            <span>18KT</span>
+          </label>
+          <label>
+            <input type="radio" name="size" value="22KT">
+            <span>22KT</span>
+          </label>
+          <label>
+            <input type="radio" name="size" value="24KT">
+            <span>24KT</span>
+          </label>
+        </div>
+        <div class="quantity d-flex align-center">
+          <button class="decrement-qty">
+            <i data-feather="minus"></i>
+          </button>
+          <div class="qty">1</div>
+          <button class="increment-qty">
+            <i data-feather="plus"></i>
+          </button>
+        </div>
+        <div class="product-actions d-flex align-center">
+          <button class="btn btn-primary">Add to Cart</button>
+          <button class="btn btn-secondary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="container">
+    <div class="related-products">
+      <h2 class="section-title"><span class="highlight-text">Related</span> Products</h2>
+      <div class="products-list">
+        <a href="#" class="product" data-aos="fade-up">
+          <div class="related-image">
+            <img src="/assets/images/related/1.webp" alt="related-product">
+          </div>
+          <h3>The Sofia Ring</h3>
+          <div class="star-ratings">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price d-flex align-center">
+            <span>₹ 22,999</span>
+            <span class="sale-price"><s>₹ 29,999</s></span>
+            <span class="discount-percent">-30%</span>
+          </div>
+        </a>
+        <a href="#" class="product" data-aos="fade-up" data-aos-delay="100">
+          <div class="related-image">
+            <img src="/assets/images/related/2.webp" alt="related-product">
+          </div>
+          <h3>The Letizia Ring</h3>
+          <div class="star-ratings">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price d-flex align-center">
+            <span>₹ 22,999</span>
+            <span class="sale-price"><s>₹ 29,999</s></span>
+            <span class="discount-percent">-30%</span>
+          </div>
+        </a>
+        <a href="#" class="product" data-aos="fade-up" data-aos-delay="200">
+          <div class="related-image">
+            <img src="/assets/images/related/3.webp" alt="related-product">
+          </div>
+          <h3>The Annetta Ring</h3>
+          <div class="star-ratings">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price d-flex align-center">
+            <span>₹ 22,999</span>
+            <span class="sale-price"><s>₹ 29,999</s></span>
+            <span class="discount-percent">-30%</span>
+          </div>
+        </a>
+        <a href="#" class="product" data-aos="fade-up" data-aos-delay="300">
+          <div class="related-image">
+            <img src="/assets/images/related/4.webp" alt="related-product">
+          </div>
+          <h3>The Antonio Ring</h3>
+          <div class="star-ratings">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price d-flex align-center">
+            <span>₹ 22,999</span>
+            <span class="sale-price"><s>₹ 29,999</s></span>
+            <span class="discount-percent">-30%</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-wrapper">
+    <div class="footer container">
+      <div class="footer-info-wrapper d-flex">
+        <div class="bluestone-info">
+          <div class="header-logo">
+            <img src="/assets/icons/bluestone-logo.webp" alt="bs-logo">
+          </div>
+          <p class="footer-text">Bluestone jewelry specializes in custom design European style jewelry that features
+            the
+            highest.</p>
+        </div>
+
+        <div class="timings-section">
+          <h3 class="footer-subheading">Visit our store</h3>
+          <p class="timings"><span>Mon - Fri :</span> 9AM - 10PM<br><span>Sat :</span> 9AM - 4PM<br><span>Sun :</span>
+            closed</p>
+        </div>
+
+        <div class="footer-badges">
+          <a href="#">Earnings</a>
+          <a href="#">Gemstones</a>
+          <a href="#">Kassidy ring</a>
+          <a href="#">Radiant cut</a>
+          <a href="#">Earnings</a>
+          <a href="#">Owl shape</a>
+        </div>
+      </div>
+
+      <div class="footer-nav d-flex justify-between">
+        <div class="footer-section">
+          <h3 class="footer-subheading">Information</h3>
+          <ul class="footer-list">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">My wishlist</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">My cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-subheading">Quick links</h3>
+          <ul class="footer-list">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Return policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Payment policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-subheading">My account</h3>
+          <ul class="footer-list">
+            <li><a href="#">My account</a></li>
+            <li><a href="#">My cart</a></li>
+            <li><a href="#">Order history</a></li>
+            <li><a href="#">My wishlist</a></li>
+            <li><a href="#">Latest news</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-subheading">Help</h3>
+          <ul class="footer-list">
+            <li><a href="#">Return policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Payment policy</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Our story</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-info container">
+      <p class="copyright-text">Copyright © 2025 Bluestone Jewelry. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    feather.replace();
+    AOS.init({
+      duration: 1000,
+      offset: 200,
+      disable: 'mobile'
+    });
+  </script>
+</body>
+
+</html>
